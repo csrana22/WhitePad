@@ -6,7 +6,7 @@ const app= express();  //initialize
 
 app.use(express.static("frontend"));
 
-let port=3000;
+let port=process.env.port || 3000;
 
 let server=app.listen(port,()=>{
     console.log("Listening");
