@@ -67,7 +67,7 @@ upload.addEventListener("click", (e) => {
             <div class="remove"></div>
         </div>
         <div class="note-cont">
-            <img src="${url}"/>
+            <img class="upload-img" src="${url}"/>
         </div>
         `;
         createSticky(stickyTemplateHTML);

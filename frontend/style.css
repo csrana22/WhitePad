@@ -18,7 +18,17 @@ body {
     align-items: center;
     border-radius: 50%;
     font-size: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+} 
+
+.options-cont:hover{
+    background-color: #e8eaf3;
+}
+
+
+.options-cont:active{
+    height: 3.3rem;
+    width: 3.3rem;
 }
 .tools-cont {
     display: flex;
@@ -47,6 +57,15 @@ body {
     display: block;
     width: 4rem;
 }
+
+.tools-cont>*:hover{
+    width:4.2rem;
+}
+
+.tools-cont>*:active{
+    transform: translateY(4px);
+}
+
 .pencil-tool-cont {
     background-color: #f1f2f6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -75,13 +94,26 @@ body {
     gap: 1rem;
 }
 .pencil-color {
-    width: 1.5rem;
-    height: 2rem;
+    width: 1.3rem;
+    height: 1.7rem;
     border-radius: 50%;
 }
 .black {
     background-color: black;
 }
+
+.pencil-color:hover{
+    width: 1.4rem;
+    height: 1.8rem;
+
+}
+
+.pencil-color:active{
+    width: 1.5rem;
+    height: 2rem;
+  transform: translateY(4px);
+}
+
 .red {
     background-color: red;
 }
@@ -116,7 +148,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #f1f2f6;
+    background-color: #dbdee9;
 }
 .header-cont > * {
     height: 1.3rem;
@@ -125,10 +157,22 @@ body {
     border-radius: 50%;
 }
 .minimize {
-    background-color: #2ed573;
+    background-color: rgb(223, 168, 67);
+}
+.minimize:hover{
+    background-color: rgb(252, 164, 0);
+}
+.minimize:active{
+    transform: translateY(2px);
 }
 .remove {
     background-color: #ff4757;
+}
+.remove:hover{
+    background-color: #fa081c;
+}
+.remove:active{
+    transform: translateY(1.5px);
 }
 .note-cont {
     height: calc( 100% - 2rem );
@@ -140,8 +184,10 @@ textarea {
     outline: none;
     border: none;
     resize: none;
+    background-color: #f1f2f6;
 }
-img {
+.upload-img {
     height: 100%;
     width: 100%;
+    background-color: #f1f2f6;
 }
