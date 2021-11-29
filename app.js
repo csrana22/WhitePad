@@ -11,9 +11,9 @@ app.get("/",(req,res)=>{
     res.sendFile("./frontend/index.html");
 })
 
-let port=process.env.port || 3000;
+let portn=process.env.PORT || 8080;
 
-let server=app.listen(port,()=>{
+let server=app.listen(portn,()=>{
     console.log("Listening");
 })
 
